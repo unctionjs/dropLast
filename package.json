@@ -1,7 +1,7 @@
 {
-  "name": "@unction/{{FQNAME}}",
+  "name": "@unction/droplast",
   "version": "1.0.0",
-  "description": "",
+  "description": "Returns all but the last N of a list of ordered values",
   "keywords": [
     "unction",
     "functional"
@@ -14,9 +14,9 @@
     }
   ],
   "license": "ISC",
-  "homepage": "https://github.com/unctionjs/{{NAME}}#readme",
-  "repository": "github:unctionjs/{{NAME}}",
-  "bugs": "https://github.com/unctionjs/{{NAME}}/issues",
+  "homepage": "https://github.com/unctionjs/dropLast#readme",
+  "repository": "github:unctionjs/dropLast",
+  "bugs": "https://github.com/unctionjs/dropLast/issues",
   "main": "transpiled/source.js",
   "nyc": {
     "require": [
@@ -58,6 +58,11 @@
     "tap": "10.7.2"
   },
   "dependencies": {
-    "ramda": "0.24.1"
+    "@unction/always": "2.0.0",
+    "@unction/append": "2.0.0",
+    "@unction/ifthenelse": "2.0.0",
+    "@unction/lessthan": "1.0.0",
+    "@unction/reducewithvaluekey": "4.0.0",
+    "@unction/reverse": "1.0.0"
   }
 }

@@ -1,12 +1,21 @@
-/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
+/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, no-magic-numbers */
 import {test} from "tap"
 
-import {{NAME}} from "./source.js"
+import dropLast from "./source.js"
 
 test(({same, end}) => {
   same(
-    {{NAME}}(true),
-    false
+    dropLast(2)(["a", "b", "c"]),
+    ["a"]
+  )
+
+  end()
+})
+
+test(({same, end}) => {
+  same(
+    dropLast(1)(["a", "b", "c"]),
+    ["a", "b"]
   )
 
   end()
