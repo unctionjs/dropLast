@@ -4,7 +4,6 @@ import {test} from "tap"
 import dropLast from "./source.js"
 
 test(({same, end}) => {
-  console.log({example: dropLast(2)(["a", "b", "c"])})
   same(
     dropLast(2)(["a", "b", "c"]),
     ["a"]
