@@ -61,6 +61,6 @@
     "@unction/append": "2.0.0",
     "@unction/greaterthan": "1.0.0",
     "@unction/length": "1.0.0",
-    "@unction/reducewithvaluekey": "4.0.0"
+    "@unction/reducewithvaluekey": "4.1.0"
   }
 }
