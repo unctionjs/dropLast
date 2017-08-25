@@ -1,24 +1,27 @@
 /* eslint-disable no-magic-numbers */
-
-import reverse from "@unction/reverse"
-import ifThenElse from "@unction/ifthenelse"
-import lessThan from "@unction/lessthan"
+import greaterThan from "@unction/greaterthan"
 import append from "@unction/append"
 import reduceWithValueKey from "@unction/reducewithvaluekey"
-import always from "@unction/always"
+import length from "@unction/length"
 
 export default function dropLast (count: number): mixed {
   return function dropLastCount (array: ArrayType): ArrayType {
-    return reverse(
-      reduceWithValueKey(
-        (accumulated: ArrayType): Function =>
-          (value: ValueType): Function =>
-            ifThenElse(lessThan(count - 1))((): ArrayType => append(value)(accumulated))(always(accumulated))
-      )(
-        []
-      )(
-        reverse(array)
-      )
+    const total = length(array)
+
+    return reduceWithValueKey(
+      (accumulated: ArrayType): Function =>
+        (value: ValueType): Function =>
+          (index: number): ArrayType => {
+            if (greaterThan(index)(total - count - 1)) {
+              return accumulated
+            }
+
+            return append(value)(accumulated)
+          }
+    )(
+      []
+    )(
+      array
     )
   }
 }
