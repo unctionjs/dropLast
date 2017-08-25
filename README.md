@@ -4,13 +4,15 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> number => ArrayType => ArrayType
+> number => (ArrayType | string) => (ArrayType | string)
 
 Returns all but the last N of a list of ordered values.
 
 ``` javascript
 dropLast(2)([1, 2, 3]) // [1]
 dropLast(1)([1, 2, 3]) // [1, 2]
+dropLast(2)("abc") // "a"
+dropLast(1)("abc") // "ab"
 ```
 
 [BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/dropLast.svg?maxAge=2592000&style=flat-square

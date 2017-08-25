@@ -20,3 +20,22 @@ test(({same, end}) => {
 
   end()
 })
+
+
+test(({same, end}) => {
+  same(
+    dropLast(2)("abc"),
+    "a"
+  )
+
+  end()
+})
+
+test(({same, end}) => {
+  same(
+    dropLast(1)("abc"),
+    "ab"
+  )
+
+  end()
+})
