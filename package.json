@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@unction/append": "2.1.0",
-    "@unction/fresh": "2.0.0",
+    "@unction/fresh": "3.0.0",
     "@unction/greaterthan": "1.0.0",
     "@unction/length": "1.0.0",
     "@unction/reducewithvaluekey": "4.1.0"
