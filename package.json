@@ -60,7 +60,7 @@
     "@unction/append": "2.8.0",
     "@unction/fresh": "3.6.0",
     "@unction/greaterthan": "1.5.0",
-    "@unction/length": "1.32.0",
+    "@unction/length": "1.33.0",
     "@unction/reducewithvaluekey": "4.32.0"
   },
   "files": [
