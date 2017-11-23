@@ -57,7 +57,7 @@
     "tap": "10.7.2"
   },
   "dependencies": {
-    "@unction/append": "2.12.0",
+    "@unction/append": "2.13.0",
     "@unction/fresh": "3.9.0",
     "@unction/greaterthan": "1.8.0",
     "@unction/length": "1.41.0",
