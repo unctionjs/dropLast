@@ -61,7 +61,7 @@
     "@unction/fresh": "3.11.0",
     "@unction/greaterthan": "1.8.0",
     "@unction/length": "1.42.0",
-    "@unction/reducewithvaluekey": "4.38.0"
+    "@unction/reducewithvaluekey": "4.40.0"
   },
   "files": [
     "transpiled/index.js"
