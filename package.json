@@ -58,10 +58,10 @@
   },
   "dependencies": {
     "@unction/append": "2.13.0",
-    "@unction/fresh": "3.9.0",
+    "@unction/fresh": "3.11.0",
     "@unction/greaterthan": "1.8.0",
-    "@unction/length": "1.41.0",
-    "@unction/reducewithvaluekey": "4.39.0"
+    "@unction/length": "1.42.0",
+    "@unction/reducewithvaluekey": "4.38.0"
   },
   "files": [
     "transpiled/index.js"
