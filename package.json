@@ -59,11 +59,11 @@
     "tap": "11.0.0"
   },
   "dependencies": {
-    "@unction/append": "2.13.0",
+    "@unction/append": "3.0.0",
     "@unction/fresh": "5.0.0",
-    "@unction/greaterthan": "1.8.0",
-    "@unction/length": "1.47.0",
-    "@unction/reducewithvaluekey": "5.0.0"
+    "@unction/greaterthan": "2.0.0",
+    "@unction/length": "2.0.0",
+    "@unction/reducewithvaluekey": "6.0.0"
   },
   "files": [
     "transpiled/index.js"
