@@ -17,7 +17,7 @@
   "homepage": "https://github.com/unctionjs/dropLast#readme",
   "repository": "github:unctionjs/dropLast",
   "bugs": "https://github.com/unctionjs/dropLast/issues",
-  "main": "transpiled/main.js",
+  "main": "main.js",
   "nyc": {
     "require": [
       "@babel/register"
@@ -72,5 +72,5 @@
     "browser.js.map"
   ],
   "module": "index.js",
-  "browser": "transpiled/browser.js"
+  "browser": "browser.js"
 }
