@@ -58,11 +58,11 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/append": "6.1.0",
-    "@unction/fresh": "8.1.0",
-    "@unction/greaterthan": "3.0.0",
-    "@unction/length": "10.1.0",
-    "@unction/reducewithvaluekey": "11.1.0",
+    "@unction/append": "6.2.0",
+    "@unction/fresh": "8.2.0",
+    "@unction/greaterthan": "3.0.1",
+    "@unction/length": "10.2.0",
+    "@unction/reducewithvaluekey": "11.2.0",
     "core-js": "3.0.1"
   },
   "files": [
