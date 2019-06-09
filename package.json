@@ -1,6 +1,6 @@
 {
   "name": "@unction/droplast",
-  "version": "11.2.0",
+  "version": "11.2.1",
   "description": "Returns all but the last N of a list of ordered values",
   "keywords": [
     "unction",
