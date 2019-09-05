@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> number => (ArrayType | string) => (ArrayType | string)
+> number => OrderedEnumerableType<A> => OrderedEnumerableType<A>
 
 Returns all but the last N of a list of ordered values.
 
