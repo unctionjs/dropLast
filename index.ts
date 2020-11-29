@@ -4,12 +4,11 @@ import append from "@unction/append";
 import reduceWithValueKey from "@unction/reducewithvaluekey";
 import length from "@unction/length";
 import fresh from "@unction/fresh";
-import {OrderedEnumerableType} from "./types";
 
 export default function dropLast<A> (count: number) {
-  return function dropLastCount (orderedList: OrderedEnumerableType<A>): OrderedEnumerableType<A> {
+  return function dropLastCount (orderedList: OrderedArray<A> | Set<A> | RecordType<unknown, A> | string): OrderedArray<A> | Set<A> | RecordType<unknown, A> | string {
     return reduceWithValueKey(
-      (accumulated: OrderedEnumerableType<A>) =>
+      (accumulated: OrderedArray<A> | Set<A> | RecordType<unknown, A> | string) =>
         (value: A) =>
           (index: number) => {
             if (greaterThan(index)(length(orderedList) - count - 1)) {
