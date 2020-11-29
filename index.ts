@@ -6,9 +6,9 @@ import length from "@unction/length";
 import fresh from "@unction/fresh";
 
 export default function dropLast<A> (count: number) {
-  return function dropLastCount (orderedList: OrderedArray<A> | Set<A> | RecordType<unknown, A> | string): OrderedArray<A> | Set<A> | RecordType<unknown, A> | string {
+  return function dropLastCount (orderedList: OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string): OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string {
     return reduceWithValueKey(
-      (accumulated: OrderedArray<A> | Set<A> | RecordType<unknown, A> | string) =>
+      (accumulated: OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string) =>
         (value: A) =>
           (index: number) => {
             if (greaterThan(index)(length(orderedList) - count - 1)) {

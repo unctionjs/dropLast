@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> number => OrderedArray<A> | Set<A> | RecordType<unknown, A> | string => OrderedArray<A> | Set<A> | RecordType<unknown, A> | string
+> number => OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string => OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string
 
 Returns all but the last N of a list of ordered values.
 
